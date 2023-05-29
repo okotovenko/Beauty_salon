@@ -588,10 +588,17 @@ body {
   opacity: 1;
 }
 
+.main__bg-ibg source picture,
+.main__bg-ibg source img {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
 .main__bg-ibg img {
   position: relative;
   z-index: 2;
-  height: 100vh !important;
+  height: 100%;
 }
 
 .main__bg-ibg img.main__scroll {
@@ -623,6 +630,10 @@ body {
   line-height: 140%;
   -webkit-animation: down 1s infinite alternate;
           animation: down 1s infinite alternate;
+}
+
+.main__down img {
+  height: 1.875rem !important;
 }
 
 @-webkit-keyframes down {
@@ -1819,6 +1830,15 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 30%;
             flex: 0 1 30%;
+  }
+
+  .main__bg-ibg source picture,
+  .main__bg-ibg source img {
+    height: 100vh;
+  }
+
+  .main__bg-ibg img {
+    height: 100vh;
   }
 
   .main__down {
