@@ -369,6 +369,8 @@ body {
   height: 0.125rem;
   background-color: #ffffff;
   background-color: #ffffff !important;
+  background: #fff;
+  z-index: 5;
 }
 
 .icon-menu::before {
@@ -1028,6 +1030,7 @@ body {
 }
 
 .master__name {
+  font-size: 1.875rem;
   line-height: 120%;
   text-align: left;
   -webkit-transition: all 0.3s ease 0s;
@@ -1443,10 +1446,6 @@ body {
   }
 
   .master__name {
-    font-size: 1.875rem;
-  }
-
-  .master__name {
     margin-bottom: 0.625rem;
   }
 
@@ -1667,15 +1666,11 @@ body {
   }
 
   .master__name {
-    font-size: 1.5rem;
-  }
-
-  .master__name {
     margin-bottom: 0.3125rem;
   }
 
   .master h6 {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
   }
 
   .price {
@@ -2295,18 +2290,6 @@ body {
     }
 }
 
-@supports (font-size: clamp( 1.5rem , 1.3841698842rem  +  0.5791505792vw , 1.875rem )) {
-    .master__name {
-      font-size: clamp( 1.5rem , 1.3841698842rem  +  0.5791505792vw , 1.875rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , 1.3841698842rem  +  0.5791505792vw , 1.875rem )) {
-    .master__name {
-      font-size: calc(1.5rem + 0.375 * (100vw - 20rem) / 64.75);
-    }
-}
-
 @supports (margin-bottom: clamp( 0.3125rem , 0.2159749035rem  +  0.4826254826vw , 0.625rem )) {
     .master__name {
       margin-bottom: clamp( 0.3125rem , 0.2159749035rem  +  0.4826254826vw , 0.625rem );
@@ -2319,15 +2302,15 @@ body {
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.7977799228rem  +  0.3861003861vw , 1.125rem )) {
+@supports (font-size: clamp( 1.125rem , 1.6158301158rem  +  -0.5791505792vw , 1.5rem )) {
     .master h6 {
-      font-size: clamp( 0.875rem , 0.7977799228rem  +  0.3861003861vw , 1.125rem );
+      font-size: clamp( 1.125rem , 1.6158301158rem  +  -0.5791505792vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.7977799228rem  +  0.3861003861vw , 1.125rem )) {
+@supports not (font-size: clamp( 1.125rem , 1.6158301158rem  +  -0.5791505792vw , 1.5rem )) {
     .master h6 {
-      font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 64.75);
+      font-size: calc(1.5rem + -0.375 * (100vw - 20rem) / 64.75);
     }
 }
 
